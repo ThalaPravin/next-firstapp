@@ -1,8 +1,11 @@
+
+
 interface RouteParams {
     params: {
         routeId: string;
     };
 }
+
 
 export default function DefaultRoutePage({ params }: RouteParams) {
     const { routeId } = params;
