@@ -23,11 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <div className="nav w-full h-16 bg-red-800 shadow-2xl text-left flex pl-5 items-center  font-extrabold text-white">
-            ThalaPravin
+        <div className="nav w-full h-16 bg-red-800 shadow-2xl text-left flex pl-5 items-center font-extrabold text-white">
+          ThalaPravin
         </div>
+        {children}
       </body>
     </html>
   );
